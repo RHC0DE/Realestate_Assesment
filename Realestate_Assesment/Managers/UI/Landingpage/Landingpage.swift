@@ -13,7 +13,7 @@ struct Landingpage: View {
         ZStack {
             Color(Colors.systemGray).edgesIgnoringSafeArea(.all)
             
-            VStack() {
+            VStack {
                 
                 Text("A Home Changes Everything")
                     .bold()
@@ -39,6 +39,7 @@ struct Landingpage: View {
                 }, label: {
                     
                     Text("Let's Go!")
+                        .foregroundColor(.black)
                         .withDefaultButtonFormatting()
 
                     

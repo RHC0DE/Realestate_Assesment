@@ -2,14 +2,29 @@
 //  Realestate_Assesment
 //
 
-
 import SwiftUI
 
 struct OnBoardingContainerView: View {
 
+    @ObservedObject var viewModel = OnBoardingViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView {
+            
+            ForEach(viewModel.features) { feature in
+                
+                OnBoardingContentView(feature: feature)
+                
+            }
+                        
+        }
+        .tabViewStyle(.page(indexDisplayMode: .always))
+        .edgesIgnoringSafeArea(.all)
+        
+        
     }
+    
 }
 
 struct OnBoardingContainerView_Previews: PreviewProvider {

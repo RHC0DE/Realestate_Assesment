@@ -21,6 +21,8 @@
 		31B975E92A594FC100B1315B /* RealestateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975E82A594FC100B1315B /* RealestateViewModel.swift */; };
 		31B975EB2A5950EA00B1315B /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975EA2A5950EA00B1315B /* OnBoardingViewModel.swift */; };
 		31B975ED2A5958F000B1315B /* OnBoardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975EC2A5958F000B1315B /* OnBoardingContainerView.swift */; };
+		31B975EF2A596AAC00B1315B /* OnBoardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975EE2A596AAC00B1315B /* OnBoardingContentView.swift */; };
+		31B975F12A59D04E00B1315B /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975F02A59D04E00B1315B /* Feature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		31B975E82A594FC100B1315B /* RealestateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateViewModel.swift; sourceTree = "<group>"; };
 		31B975EA2A5950EA00B1315B /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
 		31B975EC2A5958F000B1315B /* OnBoardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerView.swift; sourceTree = "<group>"; };
+		31B975EE2A596AAC00B1315B /* OnBoardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentView.swift; sourceTree = "<group>"; };
+		31B975F02A59D04E00B1315B /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 		31B975CF2A55F08700B1315B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				31B975F02A59D04E00B1315B /* Feature.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			children = (
 				31B975E12A576D7F00B1315B /* Landingpage.swift */,
 				31B975EC2A5958F000B1315B /* OnBoardingContainerView.swift */,
+				31B975EE2A596AAC00B1315B /* OnBoardingContentView.swift */,
 			);
 			path = Landingpage;
 			sourceTree = "<group>";
@@ -274,9 +280,11 @@
 				31B975E42A58986900B1315B /* DefaultButtonViewModifier.swift in Sources */,
 				31B975E92A594FC100B1315B /* RealestateViewModel.swift in Sources */,
 				31B975CA2A55F00B00B1315B /* Home.swift in Sources */,
+				31B975EF2A596AAC00B1315B /* OnBoardingContentView.swift in Sources */,
 				31B975EB2A5950EA00B1315B /* OnBoardingViewModel.swift in Sources */,
 				31B975E22A576D7F00B1315B /* Landingpage.swift in Sources */,
 				31B975BC2A53198600B1315B /* Realestate_AssesmentApp.swift in Sources */,
+				31B975F12A59D04E00B1315B /* Feature.swift in Sources */,
 				31B975ED2A5958F000B1315B /* OnBoardingContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
