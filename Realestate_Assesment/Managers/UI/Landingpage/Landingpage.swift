@@ -11,7 +11,7 @@ struct Landingpage: View {
     var body: some View {
         
         ZStack {
-            Color(Colors.systemGray).edgesIgnoringSafeArea(.all)
+            Color(Colors.onBoardingColor).edgesIgnoringSafeArea(.all)
             
             VStack {
                 

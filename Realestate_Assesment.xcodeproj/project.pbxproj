@@ -23,6 +23,10 @@
 		31B975ED2A5958F000B1315B /* OnBoardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975EC2A5958F000B1315B /* OnBoardingContainerView.swift */; };
 		31B975EF2A596AAC00B1315B /* OnBoardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975EE2A596AAC00B1315B /* OnBoardingContentView.swift */; };
 		31B975F12A59D04E00B1315B /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975F02A59D04E00B1315B /* Feature.swift */; };
+		31B975F32A5C9B8200B1315B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B975F22A5C9B8200B1315B /* Launch Screen.storyboard */; };
+		31D5386E2A5ED9400063ADB9 /* RealestateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5386D2A5ED9400063ADB9 /* RealestateCell.swift */; };
+		31D538702A5EDB450063ADB9 /* RealestateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5386F2A5EDB440063ADB9 /* RealestateDetail.swift */; };
+		31D538722A5EDC640063ADB9 /* Realestate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D538712A5EDC640063ADB9 /* Realestate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		31B975EC2A5958F000B1315B /* OnBoardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerView.swift; sourceTree = "<group>"; };
 		31B975EE2A596AAC00B1315B /* OnBoardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentView.swift; sourceTree = "<group>"; };
 		31B975F02A59D04E00B1315B /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		31B975F22A5C9B8200B1315B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		31D5386D2A5ED9400063ADB9 /* RealestateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateCell.swift; sourceTree = "<group>"; };
+		31D5386F2A5EDB440063ADB9 /* RealestateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateDetail.swift; sourceTree = "<group>"; };
+		31D538712A5EDC640063ADB9 /* Realestate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realestate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 				31B975D72A55F22B00B1315B /* Colors.swift */,
 				31B975D92A55F2B600B1315B /* Strings.swift */,
 				31B975DF2A56D62D00B1315B /* Localizable.strings */,
+				31B975F22A5C9B8200B1315B /* Launch Screen.storyboard */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -136,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				31B975F02A59D04E00B1315B /* Feature.swift */,
+				31D538712A5EDC640063ADB9 /* Realestate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +181,8 @@
 		31B975D42A55F12000B1315B /* Realestate */ = {
 			isa = PBXGroup;
 			children = (
+				31D5386D2A5ED9400063ADB9 /* RealestateCell.swift */,
+				31D5386F2A5EDB440063ADB9 /* RealestateDetail.swift */,
 			);
 			path = Realestate;
 			sourceTree = "<group>";
@@ -262,6 +274,7 @@
 			files = (
 				31B975C32A53198700B1315B /* Preview Assets.xcassets in Resources */,
 				31B975DD2A56D62D00B1315B /* Localizable.strings in Resources */,
+				31B975F32A5C9B8200B1315B /* Launch Screen.storyboard in Resources */,
 				31B975C02A53198700B1315B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +291,7 @@
 				31B975DA2A55F2B600B1315B /* Strings.swift in Sources */,
 				31B975E62A589B6200B1315B /* PressableButtonStyle.swift in Sources */,
 				31B975E42A58986900B1315B /* DefaultButtonViewModifier.swift in Sources */,
+				31D538722A5EDC640063ADB9 /* Realestate.swift in Sources */,
 				31B975E92A594FC100B1315B /* RealestateViewModel.swift in Sources */,
 				31B975CA2A55F00B00B1315B /* Home.swift in Sources */,
 				31B975EF2A596AAC00B1315B /* OnBoardingContentView.swift in Sources */,
@@ -286,6 +300,8 @@
 				31B975BC2A53198600B1315B /* Realestate_AssesmentApp.swift in Sources */,
 				31B975F12A59D04E00B1315B /* Feature.swift in Sources */,
 				31B975ED2A5958F000B1315B /* OnBoardingContainerView.swift in Sources */,
+				31D538702A5EDB450063ADB9 /* RealestateDetail.swift in Sources */,
+				31D5386E2A5ED9400063ADB9 /* RealestateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +448,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +478,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

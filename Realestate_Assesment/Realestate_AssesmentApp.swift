@@ -12,6 +12,8 @@ struct Realestate_AssesmentApp: App {
         
         WindowGroup {
             
+            let viewModel = RealestateViewModel()
+            
             if isOnboarding {
                 
                 Landingpage()
@@ -19,6 +21,7 @@ struct Realestate_AssesmentApp: App {
             } else {
                 
                 ContentView()
+                    .environmentObject(viewModel)
                 
             }
             
