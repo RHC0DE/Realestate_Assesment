@@ -17,6 +17,7 @@ struct Realestate: Identifiable {
     var bathrooms: Int
     var size: Int
     var description: String
+    var houseMap: String
     var zip: String
     var city: String
     var latitude: Double

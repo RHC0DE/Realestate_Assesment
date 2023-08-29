@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		313A3D9C2A6137A90051547C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 313A3D9B2A6137A90051547C /* FirebaseAuth */; };
+		313A3D9E2A6137A90051547C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 313A3D9D2A6137A90051547C /* FirebaseDatabase */; };
+		313A3DA02A6137A90051547C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 313A3D9F2A6137A90051547C /* FirebaseFirestore */; };
+		313A3DA22A6137A90051547C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 313A3DA12A6137A90051547C /* FirebaseStorage */; };
+		313A3DA42A61394F0051547C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 313A3DA32A61394E0051547C /* GoogleService-Info.plist */; };
+		31B325012A8AC22F00EBC167 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B325002A8AC22F00EBC167 /* LocationManager.swift */; };
+		31B325032A8AC3DE00EBC167 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B325022A8AC3DE00EBC167 /* MapView.swift */; };
 		31B975BC2A53198600B1315B /* Realestate_AssesmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975BB2A53198600B1315B /* Realestate_AssesmentApp.swift */; };
 		31B975BE2A53198600B1315B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975BD2A53198600B1315B /* ContentView.swift */; };
 		31B975C02A53198700B1315B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B975BF2A53198700B1315B /* Assets.xcassets */; };
@@ -14,7 +21,6 @@
 		31B975CA2A55F00B00B1315B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975C92A55F00B00B1315B /* Home.swift */; };
 		31B975D82A55F22B00B1315B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975D72A55F22B00B1315B /* Colors.swift */; };
 		31B975DA2A55F2B600B1315B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975D92A55F2B600B1315B /* Strings.swift */; };
-		31B975DD2A56D62D00B1315B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31B975DF2A56D62D00B1315B /* Localizable.strings */; };
 		31B975E22A576D7F00B1315B /* Landingpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975E12A576D7F00B1315B /* Landingpage.swift */; };
 		31B975E42A58986900B1315B /* DefaultButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975E32A58986900B1315B /* DefaultButtonViewModifier.swift */; };
 		31B975E62A589B6200B1315B /* PressableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B975E52A589B6200B1315B /* PressableButtonStyle.swift */; };
@@ -27,9 +33,16 @@
 		31D5386E2A5ED9400063ADB9 /* RealestateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5386D2A5ED9400063ADB9 /* RealestateCell.swift */; };
 		31D538702A5EDB450063ADB9 /* RealestateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5386F2A5EDB440063ADB9 /* RealestateDetail.swift */; };
 		31D538722A5EDC640063ADB9 /* Realestate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D538712A5EDC640063ADB9 /* Realestate.swift */; };
+		31D6F3E42A9B486300285035 /* RealestateDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E32A9B486300285035 /* RealestateDescription.swift */; };
+		31D6F3E62A9B58B000285035 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E52A9B58B000285035 /* BackButton.swift */; };
+		31D6F3E82A9B94C400285035 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E72A9B94C400285035 /* RoundedCorner.swift */; };
+		31F3AC182A6530A800C5828D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3AC172A6530A800C5828D /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		313A3DA32A61394E0051547C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31B325002A8AC22F00EBC167 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		31B325022A8AC3DE00EBC167 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		31B975B82A53198600B1315B /* Realestate_Assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Realestate_Assesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B975BB2A53198600B1315B /* Realestate_AssesmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realestate_AssesmentApp.swift; sourceTree = "<group>"; };
 		31B975BD2A53198600B1315B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,8 +51,6 @@
 		31B975C92A55F00B00B1315B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		31B975D72A55F22B00B1315B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		31B975D92A55F2B600B1315B /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		31B975DE2A56D62D00B1315B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		31B975E02A56D63100B1315B /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		31B975E12A576D7F00B1315B /* Landingpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landingpage.swift; sourceTree = "<group>"; };
 		31B975E32A58986900B1315B /* DefaultButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonViewModifier.swift; sourceTree = "<group>"; };
 		31B975E52A589B6200B1315B /* PressableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableButtonStyle.swift; sourceTree = "<group>"; };
@@ -52,6 +63,10 @@
 		31D5386D2A5ED9400063ADB9 /* RealestateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateCell.swift; sourceTree = "<group>"; };
 		31D5386F2A5EDB440063ADB9 /* RealestateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateDetail.swift; sourceTree = "<group>"; };
 		31D538712A5EDC640063ADB9 /* Realestate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realestate.swift; sourceTree = "<group>"; };
+		31D6F3E32A9B486300285035 /* RealestateDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateDescription.swift; sourceTree = "<group>"; };
+		31D6F3E52A9B58B000285035 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		31D6F3E72A9B94C400285035 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		31F3AC172A6530A800C5828D /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313A3D9E2A6137A90051547C /* FirebaseDatabase in Frameworks */,
+				313A3DA22A6137A90051547C /* FirebaseStorage in Frameworks */,
+				313A3D9C2A6137A90051547C /* FirebaseAuth in Frameworks */,
+				313A3DA02A6137A90051547C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +103,7 @@
 		31B975BA2A53198600B1315B /* Realestate_Assesment */ = {
 			isa = PBXGroup;
 			children = (
+				313A3DA32A61394E0051547C /* GoogleService-Info.plist */,
 				31B975BB2A53198600B1315B /* Realestate_AssesmentApp.swift */,
 				31B975BD2A53198600B1315B /* ContentView.swift */,
 				31B975CB2A55F03400B1315B /* Assets */,
@@ -110,7 +130,6 @@
 				31B975BF2A53198700B1315B /* Assets.xcassets */,
 				31B975D72A55F22B00B1315B /* Colors.swift */,
 				31B975D92A55F2B600B1315B /* Strings.swift */,
-				31B975DF2A56D62D00B1315B /* Localizable.strings */,
 				31B975F22A5C9B8200B1315B /* Launch Screen.storyboard */,
 			);
 			path = Assets;
@@ -129,6 +148,8 @@
 			children = (
 				31B975E32A58986900B1315B /* DefaultButtonViewModifier.swift */,
 				31B975E52A589B6200B1315B /* PressableButtonStyle.swift */,
+				31D6F3E72A9B94C400285035 /* RoundedCorner.swift */,
+				31D6F3E52A9B58B000285035 /* BackButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -153,6 +174,8 @@
 		31B975D12A55F0A000B1315B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				31F3AC172A6530A800C5828D /* FirebaseManager.swift */,
+				31B325002A8AC22F00EBC167 /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -183,6 +206,7 @@
 			children = (
 				31D5386D2A5ED9400063ADB9 /* RealestateCell.swift */,
 				31D5386F2A5EDB440063ADB9 /* RealestateDetail.swift */,
+				31D6F3E32A9B486300285035 /* RealestateDescription.swift */,
 			);
 			path = Realestate;
 			sourceTree = "<group>";
@@ -200,6 +224,7 @@
 		31B975D62A55F15600B1315B /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				31B325022A8AC3DE00EBC167 /* MapView.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -229,6 +254,12 @@
 			dependencies = (
 			);
 			name = Realestate_Assesment;
+			packageProductDependencies = (
+				313A3D9B2A6137A90051547C /* FirebaseAuth */,
+				313A3D9D2A6137A90051547C /* FirebaseDatabase */,
+				313A3D9F2A6137A90051547C /* FirebaseFirestore */,
+				313A3DA12A6137A90051547C /* FirebaseStorage */,
+			);
 			productName = Realestate_Assesment;
 			productReference = 31B975B82A53198600B1315B /* Realestate_Assesment.app */;
 			productType = "com.apple.product-type.application";
@@ -250,14 +281,16 @@
 			};
 			buildConfigurationList = 31B975B32A53198600B1315B /* Build configuration list for PBXProject "Realestate_Assesment" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = nl;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				nl,
 			);
 			mainGroup = 31B975AF2A53198600B1315B;
+			packageReferences = (
+				313A3D9A2A6137A90051547C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 31B975B92A53198600B1315B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,7 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B975C32A53198700B1315B /* Preview Assets.xcassets in Resources */,
-				31B975DD2A56D62D00B1315B /* Localizable.strings in Resources */,
+				313A3DA42A61394F0051547C /* GoogleService-Info.plist in Resources */,
 				31B975F32A5C9B8200B1315B /* Launch Screen.storyboard in Resources */,
 				31B975C02A53198700B1315B /* Assets.xcassets in Resources */,
 			);
@@ -288,36 +321,30 @@
 			files = (
 				31B975BE2A53198600B1315B /* ContentView.swift in Sources */,
 				31B975D82A55F22B00B1315B /* Colors.swift in Sources */,
+				31D6F3E62A9B58B000285035 /* BackButton.swift in Sources */,
 				31B975DA2A55F2B600B1315B /* Strings.swift in Sources */,
+				31D6F3E42A9B486300285035 /* RealestateDescription.swift in Sources */,
 				31B975E62A589B6200B1315B /* PressableButtonStyle.swift in Sources */,
 				31B975E42A58986900B1315B /* DefaultButtonViewModifier.swift in Sources */,
 				31D538722A5EDC640063ADB9 /* Realestate.swift in Sources */,
 				31B975E92A594FC100B1315B /* RealestateViewModel.swift in Sources */,
 				31B975CA2A55F00B00B1315B /* Home.swift in Sources */,
+				31B325012A8AC22F00EBC167 /* LocationManager.swift in Sources */,
 				31B975EF2A596AAC00B1315B /* OnBoardingContentView.swift in Sources */,
 				31B975EB2A5950EA00B1315B /* OnBoardingViewModel.swift in Sources */,
 				31B975E22A576D7F00B1315B /* Landingpage.swift in Sources */,
 				31B975BC2A53198600B1315B /* Realestate_AssesmentApp.swift in Sources */,
 				31B975F12A59D04E00B1315B /* Feature.swift in Sources */,
 				31B975ED2A5958F000B1315B /* OnBoardingContainerView.swift in Sources */,
+				31B325032A8AC3DE00EBC167 /* MapView.swift in Sources */,
 				31D538702A5EDB450063ADB9 /* RealestateDetail.swift in Sources */,
 				31D5386E2A5ED9400063ADB9 /* RealestateCell.swift in Sources */,
+				31D6F3E82A9B94C400285035 /* RoundedCorner.swift in Sources */,
+				31F3AC182A6530A800C5828D /* FirebaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		31B975DF2A56D62D00B1315B /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31B975DE2A56D62D00B1315B /* en */,
-				31B975E02A56D63100B1315B /* nl */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		31B975C42A53198700B1315B /* Debug */ = {
@@ -445,6 +472,7 @@
 				DEVELOPMENT_TEAM = AMQ6T3X92J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "De Realestate app heeft toegang nodig tot uw locatie voorzieningen voor gebruik";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -475,6 +503,7 @@
 				DEVELOPMENT_TEAM = AMQ6T3X92J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "De Realestate app heeft toegang nodig tot uw locatie voorzieningen voor gebruik";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -516,6 +545,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		313A3D9A2A6137A90051547C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		313A3D9B2A6137A90051547C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 313A3D9A2A6137A90051547C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		313A3D9D2A6137A90051547C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 313A3D9A2A6137A90051547C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		313A3D9F2A6137A90051547C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 313A3D9A2A6137A90051547C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		313A3DA12A6137A90051547C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 313A3D9A2A6137A90051547C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31B975B02A53198600B1315B /* Project object */;
 }
