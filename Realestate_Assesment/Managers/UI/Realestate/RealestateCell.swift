@@ -32,7 +32,7 @@ struct RealestateCell : View {
                     .foregroundColor(.primary)
                 
                 HStack {
-                    Text(realestate.zip + realestate.city)
+                    Text(realestate.zip + " " + realestate.city)
                         .foregroundColor(Color(red: 0.596, green: 0.596, blue: 0.596))
                 }
                 
@@ -77,7 +77,6 @@ struct RealestateCell : View {
         
     }
 
-    
 }
 
 //struct RealestateCell_Previews: PreviewProvider {

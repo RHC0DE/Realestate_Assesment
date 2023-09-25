@@ -5,7 +5,6 @@
 import SwiftUI
 import FirebaseCore
 
-
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
@@ -29,17 +28,17 @@ struct Realestate_AssesmentApp: App {
             
             let viewModel = RealestateViewModel()
             
-            if isOnboarding {
+                if isOnboarding {
+                    
+                    Landingpage()
+                    
+                } else {
+                    
+                    ContentView()
+                        .environmentObject(viewModel)
+                    
+                }
                 
-                Landingpage()
-                
-            } else {
-                
-                ContentView()
-                    .environmentObject(viewModel)
-                
-            }
-            
         }
         
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3129C1D52AC230B500D34CCA /* NoResultImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C1D42AC230B500D34CCA /* NoResultImage.swift */; };
 		313A3D9C2A6137A90051547C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 313A3D9B2A6137A90051547C /* FirebaseAuth */; };
 		313A3D9E2A6137A90051547C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 313A3D9D2A6137A90051547C /* FirebaseDatabase */; };
 		313A3DA02A6137A90051547C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 313A3D9F2A6137A90051547C /* FirebaseFirestore */; };
@@ -36,10 +37,12 @@
 		31D6F3E42A9B486300285035 /* RealestateDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E32A9B486300285035 /* RealestateDescription.swift */; };
 		31D6F3E62A9B58B000285035 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E52A9B58B000285035 /* BackButton.swift */; };
 		31D6F3E82A9B94C400285035 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E72A9B94C400285035 /* RoundedCorner.swift */; };
+		31F2480D2A9E66BB00119F8D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F2480C2A9E66BB00119F8D /* AboutView.swift */; };
 		31F3AC182A6530A800C5828D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3AC172A6530A800C5828D /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3129C1D42AC230B500D34CCA /* NoResultImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultImage.swift; sourceTree = "<group>"; };
 		313A3DA32A61394E0051547C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31B325002A8AC22F00EBC167 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		31B325022A8AC3DE00EBC167 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		31D6F3E32A9B486300285035 /* RealestateDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateDescription.swift; sourceTree = "<group>"; };
 		31D6F3E52A9B58B000285035 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		31D6F3E72A9B94C400285035 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		31F2480C2A9E66BB00119F8D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		31F3AC172A6530A800C5828D /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				31B975E32A58986900B1315B /* DefaultButtonViewModifier.swift */,
+				3129C1D42AC230B500D34CCA /* NoResultImage.swift */,
 				31B975E52A589B6200B1315B /* PressableButtonStyle.swift */,
 				31D6F3E72A9B94C400285035 /* RoundedCorner.swift */,
 				31D6F3E52A9B58B000285035 /* BackButton.swift */,
@@ -193,6 +198,7 @@
 		31B975D32A55F11B00B1315B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31F2480B2A9E66A000119F8D /* Aboutpage */,
 				31B975D52A55F13900B1315B /* Landingpage */,
 				31B975D42A55F12000B1315B /* Realestate */,
 				31B975D62A55F15600B1315B /* Location */,
@@ -236,6 +242,14 @@
 				31B975EA2A5950EA00B1315B /* OnBoardingViewModel.swift */,
 			);
 			path = Viewmodels;
+			sourceTree = "<group>";
+		};
+		31F2480B2A9E66A000119F8D /* Aboutpage */ = {
+			isa = PBXGroup;
+			children = (
+				31F2480C2A9E66BB00119F8D /* AboutView.swift */,
+			);
+			path = Aboutpage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +338,7 @@
 				31D6F3E62A9B58B000285035 /* BackButton.swift in Sources */,
 				31B975DA2A55F2B600B1315B /* Strings.swift in Sources */,
 				31D6F3E42A9B486300285035 /* RealestateDescription.swift in Sources */,
+				3129C1D52AC230B500D34CCA /* NoResultImage.swift in Sources */,
 				31B975E62A589B6200B1315B /* PressableButtonStyle.swift in Sources */,
 				31B975E42A58986900B1315B /* DefaultButtonViewModifier.swift in Sources */,
 				31D538722A5EDC640063ADB9 /* Realestate.swift in Sources */,
@@ -332,6 +347,7 @@
 				31B325012A8AC22F00EBC167 /* LocationManager.swift in Sources */,
 				31B975EF2A596AAC00B1315B /* OnBoardingContentView.swift in Sources */,
 				31B975EB2A5950EA00B1315B /* OnBoardingViewModel.swift in Sources */,
+				31F2480D2A9E66BB00119F8D /* AboutView.swift in Sources */,
 				31B975E22A576D7F00B1315B /* Landingpage.swift in Sources */,
 				31B975BC2A53198600B1315B /* Realestate_AssesmentApp.swift in Sources */,
 				31B975F12A59D04E00B1315B /* Feature.swift in Sources */,
@@ -397,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

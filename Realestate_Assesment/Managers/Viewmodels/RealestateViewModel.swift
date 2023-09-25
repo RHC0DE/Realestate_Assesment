@@ -4,6 +4,7 @@
 
 import Foundation
 import Firebase
+import Combine
 
 class RealestateViewModel: ObservableObject {
     
@@ -12,22 +13,49 @@ class RealestateViewModel: ObservableObject {
     @Published var searchQuery = ""
     @Published var realestates = [Realestate]()
     @Published var realestate: Realestate?
-    
-    
-    // MARK: - Functions
+    @Published var filteredRealestates: [Realestate] = []
 
+    private var cancellables: Set<AnyCancellable> = []
+
+//    var filteredRealestates: [Realestate] {
+//        if searchQuery.isEmpty {
+//            return realestates
+//        } else {
+//            return realestates.filter { realestate in
+//                return realestate.city.lowercased().contains(searchQuery.lowercased())
+//            }
+//        }
+//    }
+    // MARK: - Functions
+    
     init() {
         fetchAllRealestates()
+        
+        $searchQuery
+            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+            .sink { [weak self] searchQuery in
+                self?.filterRealestates()
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func filterRealestates() {
+        filteredRealestates = realestates.filter { realestate in
+            let searchText = searchQuery.lowercased()
+            return realestate.city.lowercased().contains(searchText) ||
+                   realestate.zip.lowercased().contains(searchText) ||
+                   String(realestate.price).contains(searchText)
+        }
     }
     
     func fetchAllRealestates() {
-
+        
         FirebaseManager.shared.fireStore.collection("Realestates").addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 print("Failed to fetch Real Estates")
                 return
             }
-
+            
             self.realestates = documents.map { querySnapshot -> Realestate in
                 let data = querySnapshot.data()
                 let id = data["id"] as? String ?? ""
@@ -43,12 +71,12 @@ class RealestateViewModel: ObservableObject {
                 let latitude = data["latitude"] as? Double ?? 0.0
                 let longitude = data["longitude"] as? Double ?? 0.0
                 let createDate = (data["createDate"] as? Timestamp)?.dateValue() ?? Date()
-
+                
                 return Realestate(id: id, imageRealestate: imageRealestate, price: price, bedrooms: bedrooms, bathrooms: bathrooms, size: size, description: description, houseMap: houseMap, zip: zip, city: city, latitude: latitude, longitude: longitude, createDate: createDate)
             }
-
+            
         }
-
+        
     }
     
 }

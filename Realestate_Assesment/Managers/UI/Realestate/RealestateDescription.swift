@@ -119,9 +119,11 @@ struct RealestateDescription: View {
                     
                 })
                 .buttonStyle(PressableButtonStyle())
+                
             }
             .hAlign(.trailing)
             .padding()
+            .padding(.top, 60)
             
         }
         .padding()

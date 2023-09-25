@@ -7,8 +7,8 @@ import SwiftUI
 struct RealestateDetail: View {
     
     // MARK: - Property's
-    @State private var realestate: Realestate
     @ObservedObject private var locationManager = LocationManager()
+    @State private var realestate: Realestate
     
     public init(realestate: Realestate) {
         self._realestate = State(initialValue: realestate)
