@@ -15,7 +15,8 @@ struct Landingpage: View {
             
             VStack {
                 
-                Text("A Home Changes Everything")
+                Text(Strings.landingpageTitle)
+                    .foregroundColor(.black)
                     .bold()
                     .font(.italic(.title)())
                     .padding(.bottom, 130)
@@ -27,7 +28,7 @@ struct Landingpage: View {
                     .padding()
                 
                 
-                Text("Go through this quick setup to get the most out of this app.")
+                Text(Strings.landingpageBody)
                     .foregroundColor(.black)
                     .font(.italic(.body)())
                     .multilineTextAlignment(.center)
@@ -38,7 +39,7 @@ struct Landingpage: View {
                     
                 }, label: {
                     
-                    Text("Let's Go!")
+                    Text(Strings.letsGoBtnTitle)
                         .foregroundColor(.black)
                         .withDefaultButtonFormatting()
 

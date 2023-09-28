@@ -22,6 +22,7 @@ struct Realestate: Identifiable {
     var city: String
     var latitude: Double
     var longitude: Double
+    var adressName: String
     var createDate: Date
     var createDateString: String {
         let formatter = DateFormatter()

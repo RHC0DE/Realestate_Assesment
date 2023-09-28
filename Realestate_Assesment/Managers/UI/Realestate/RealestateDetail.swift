@@ -66,6 +66,7 @@ struct RealestateDetail_Previews: PreviewProvider {
                                           city: "Amsterdan",
                                           latitude: 52.325836,
                                           longitude: 4.880179,
+                                          adressName: "Kastelenstraat 105",
                                           createDate: Date())
         RealestateDetail(realestate: sampleRealestate)
         

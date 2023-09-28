@@ -40,7 +40,7 @@ struct Home: View {
             }
             .vAlign(.top)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .navigationBarTitle(Text("Real estates"), displayMode: .automatic)
+            .navigationBarTitle(Text(Strings.realestateTitle), displayMode: .automatic)
             .navigationBarBackButtonHidden(true)
             .onAppear() {
                 self.viewModel.fetchAllRealestates()
@@ -59,61 +59,6 @@ struct Home: View {
     }
 
 }
-
-//struct Home: View {
-//
-//    @EnvironmentObject var viewModel: RealestateViewModel
-//    @ObservedObject var locationManager = LocationManager()
-//
-//    var body: some View {
-//
-//        NavigationView {
-//
-//            VStack {
-//
-//                List(self.viewModel.realestates) { realestate in
-//
-//                    Section {
-//
-//                        NavigationLink(destination: RealestateDetail(realestate: realestate)) {
-//
-//                            RealestateCell(realestate: realestate)
-//
-//                        }
-//
-//                    }.foregroundColor(.clear)
-//
-//                }
-//                .listStyle(.insetGrouped)
-//
-//            }
-//            .vAlign(.top)
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-//            .navigationBarTitle(Text("Real estates"), displayMode: .automatic)
-//            .navigationBarBackButtonHidden(true)
-//            .onAppear() {
-//                self.viewModel.fetchAllRealestates()
-//            }
-//            .onAppear(perform: locationManager.requestLocation)
-//            .searchable(text: self.$viewModel.searchQuery) {
-//
-//                ForEach(viewModel.filteredRealestates) { realestateSearch in
-//
-//                    NavigationLink(destination: RealestateDetail(realestate: realestateSearch)) {
-//
-//                        RealestateCell(realestate: realestateSearch)
-//
-//                    }
-//
-//                }
-//
-//            }
-//
-//        }
-//
-//    }
-//
-//}
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {

@@ -66,7 +66,7 @@ struct RealestateDescription: View {
                 
             }
             
-            Text("Beschrijving")
+            Text(Strings.descriptionHeader)
                 .font(.title2)
                 .bold()
                 .foregroundColor(.black)
@@ -77,7 +77,7 @@ struct RealestateDescription: View {
                 .padding()
                 .padding(.top, -20)
             
-            Text("Locatie")
+            Text(Strings.locationHeader)
                 .font(.title2)
                 .bold()
                 .foregroundColor(.black)
@@ -89,7 +89,7 @@ struct RealestateDescription: View {
                     // Open Maps app and show the location
                     let coordinate = CLLocationCoordinate2D(latitude: realestate.latitude, longitude: realestate.longitude)
                     let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate))
-                    mapItem.name = "Location Name" // Replace with an appropriate name
+                    mapItem.name = "\(realestate.adressName)" // Replace with an appropriate name
                     mapItem.openInMaps(launchOptions: nil)
                 }) {
                     MapView(latitude: realestate.latitude, longitude: realestate.longitude)
@@ -108,7 +108,7 @@ struct RealestateDescription: View {
             HStack {
                 
                 Link(destination: URL(string: realestate.houseMap)!, label: {
-                    Label("Plattegrond details!", systemImage: "house")
+                    Label(Strings.houseMapDetailLabel, systemImage: "house")
                         .font(.subheadline)
                         .bold()
                         .foregroundColor(.white)
@@ -153,6 +153,7 @@ struct RealestateDescription_Previews: PreviewProvider {
                                           city: "Amsterdan",
                                           latitude: 52.325836,
                                           longitude: 4.880179,
+                                          adressName: "Kastelenstraat 105",
                                           createDate: Date())
         RealestateDescription(realestate: sampleRealestate)
         

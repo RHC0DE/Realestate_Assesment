@@ -14,18 +14,8 @@ class RealestateViewModel: ObservableObject {
     @Published var realestates = [Realestate]()
     @Published var realestate: Realestate?
     @Published var filteredRealestates: [Realestate] = []
-
     private var cancellables: Set<AnyCancellable> = []
 
-//    var filteredRealestates: [Realestate] {
-//        if searchQuery.isEmpty {
-//            return realestates
-//        } else {
-//            return realestates.filter { realestate in
-//                return realestate.city.lowercased().contains(searchQuery.lowercased())
-//            }
-//        }
-//    }
     // MARK: - Functions
     
     init() {
@@ -70,9 +60,10 @@ class RealestateViewModel: ObservableObject {
                 let city = data["city"] as? String ?? ""
                 let latitude = data["latitude"] as? Double ?? 0.0
                 let longitude = data["longitude"] as? Double ?? 0.0
+                let adressName = data["adressName"] as? String ?? ""
                 let createDate = (data["createDate"] as? Timestamp)?.dateValue() ?? Date()
                 
-                return Realestate(id: id, imageRealestate: imageRealestate, price: price, bedrooms: bedrooms, bathrooms: bathrooms, size: size, description: description, houseMap: houseMap, zip: zip, city: city, latitude: latitude, longitude: longitude, createDate: createDate)
+                return Realestate(id: id, imageRealestate: imageRealestate, price: price, bedrooms: bedrooms, bathrooms: bathrooms, size: size, description: description, houseMap: houseMap, zip: zip, city: city, latitude: latitude, longitude: longitude, adressName: adressName, createDate: createDate)
             }
             
         }

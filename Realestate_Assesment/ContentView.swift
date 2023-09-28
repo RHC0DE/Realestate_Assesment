@@ -19,7 +19,7 @@ struct ContentView: View {
                         Label("", systemImage: "house")
                     }
                 
-                AboutView()
+                About()
                     .tabItem {
                         Label("", systemImage: "info.circle.fill")
                     }

@@ -17,16 +17,16 @@ struct NoResultImage: View {
                 .scaledToFill()
                 .frame(width: 150, height: 150)
                 .padding()
-            Text("Geen resultaten gevonden!")
+            Text("No results found!")
                 .font(.headline)
                 .foregroundColor(.gray)
                 .padding(.top, 70)
             
-            Text("Misschien een andere zoekopdracht proberen?")
+            Text("Maybe try a different search?")
                 .font(.headline)
                 .foregroundColor(.gray)
             
-            Spacer() 
+            Spacer()
         }
     }
 }

@@ -37,7 +37,7 @@
 		31D6F3E42A9B486300285035 /* RealestateDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E32A9B486300285035 /* RealestateDescription.swift */; };
 		31D6F3E62A9B58B000285035 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E52A9B58B000285035 /* BackButton.swift */; };
 		31D6F3E82A9B94C400285035 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6F3E72A9B94C400285035 /* RoundedCorner.swift */; };
-		31F2480D2A9E66BB00119F8D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F2480C2A9E66BB00119F8D /* AboutView.swift */; };
+		31F2480D2A9E66BB00119F8D /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F2480C2A9E66BB00119F8D /* About.swift */; };
 		31F3AC182A6530A800C5828D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3AC172A6530A800C5828D /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,7 @@
 		31D6F3E32A9B486300285035 /* RealestateDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateDescription.swift; sourceTree = "<group>"; };
 		31D6F3E52A9B58B000285035 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		31D6F3E72A9B94C400285035 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
-		31F2480C2A9E66BB00119F8D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		31F2480C2A9E66BB00119F8D /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		31F3AC172A6530A800C5828D /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,7 +247,7 @@
 		31F2480B2A9E66A000119F8D /* Aboutpage */ = {
 			isa = PBXGroup;
 			children = (
-				31F2480C2A9E66BB00119F8D /* AboutView.swift */,
+				31F2480C2A9E66BB00119F8D /* About.swift */,
 			);
 			path = Aboutpage;
 			sourceTree = "<group>";
@@ -295,11 +295,12 @@
 			};
 			buildConfigurationList = 31B975B32A53198600B1315B /* Build configuration list for PBXProject "Realestate_Assesment" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = nl;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				nl,
+				en,
 			);
 			mainGroup = 31B975AF2A53198600B1315B;
 			packageReferences = (
@@ -347,7 +348,7 @@
 				31B325012A8AC22F00EBC167 /* LocationManager.swift in Sources */,
 				31B975EF2A596AAC00B1315B /* OnBoardingContentView.swift in Sources */,
 				31B975EB2A5950EA00B1315B /* OnBoardingViewModel.swift in Sources */,
-				31F2480D2A9E66BB00119F8D /* AboutView.swift in Sources */,
+				31F2480D2A9E66BB00119F8D /* About.swift in Sources */,
 				31B975E22A576D7F00B1315B /* Landingpage.swift in Sources */,
 				31B975BC2A53198600B1315B /* Realestate_AssesmentApp.swift in Sources */,
 				31B975F12A59D04E00B1315B /* Feature.swift in Sources */,
